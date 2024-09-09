@@ -30,6 +30,7 @@ public class CurrentAcount extends Account{
 
     public void setLimiteDeSobregiro(int limiteDeSobregiro) {
         this.limiteDeSobregiro = limiteDeSobregiro;
+        this.limiteDeSobregiro=limiteDeSobregiro;
     }
     
 }
