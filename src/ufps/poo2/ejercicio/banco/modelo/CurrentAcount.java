@@ -11,14 +11,14 @@ package ufps.poo2.ejercicio.banco.modelo;
 public class CurrentAcount extends Account{
     private double limiteDeSobregiro;
     
-    public CurrentAcount(int a, double limSobregiro) {
+    public CurrentAcount(int a) {
         super(a);
-        this.limiteDeSobregiro=limSobregiro;;
+        this.limiteDeSobregiro=15;
     }
     
     @Override
     public void withdraw(double sum) {
-		if (sum <= getBalance()+limiteDeSobregiro)
+		if (sum <= this.getBalance()+limiteDeSobregiro)
 			super.withdraw(sum);
  
     }

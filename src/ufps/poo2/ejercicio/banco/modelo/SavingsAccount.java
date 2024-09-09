@@ -11,9 +11,9 @@ package ufps.poo2.ejercicio.banco.modelo;
 public class SavingsAccount extends Account{
     private double interest;
     
-    public SavingsAccount(int n, double interest) {
-        super(n);
-        this.interest=interest;          
+    public SavingsAccount(int n) {
+        super(n); 
+        this.interest=0.2;
                 
     }
     

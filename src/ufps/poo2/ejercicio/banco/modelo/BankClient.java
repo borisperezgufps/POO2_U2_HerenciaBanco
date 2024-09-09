@@ -6,8 +6,8 @@ public class BankClient {
         Bank banco = new Bank();
         
         
-        banco.abrirCuenta(true, 101, 500.0, 0.0);
-        banco.abrirCuenta(false, 102, 0.0, 2.5);  
+        banco.openAccount('C',1234);
+        banco.openAccount('A',12345);  
 
       
         Account cuentaCorriente = banco.getCuentas().get(0); 
@@ -26,7 +26,7 @@ public class BankClient {
         System.out.println("Saldo cuenta de ahorro: " + cuentaAhorro.getBalance());
 
      
-        banco.cerrarCuenta(cuentaAhorro);
+       
 
      
         banco.depositarCuenta(cuentaAhorro, 500.0);
